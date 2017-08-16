@@ -19,7 +19,7 @@ app.listen(app.get('port'), function() {
 
 
 app.get('/', function (req,res) {
-    res.render('index'); /*todo*/
+    res.render('#'); /*todo*/
   });
 
   app.get('/signup', function (req,res) {
