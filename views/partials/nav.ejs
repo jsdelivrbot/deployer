@@ -1,33 +1,101 @@
-<nav class="navbar navbar-default navbar-static-top navbar-inverse">
-  <div class="container">
-    <ul class="nav navbar-nav">
-      <li class="active">
-        <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
-      </li>
-      <li>
-        <a href="https://devcenter.heroku.com/articles/how-heroku-works"><span class="glyphicon glyphicon-user"></span> How Heroku Works</a>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-info-sign"></span> Getting Started Guides <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-ruby">Getting Started with Ruby on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started with Node on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-php">Getting Started with PHP on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-python">Getting Started with Python on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-java">Getting Started with Java on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-go">Getting Started with Go on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-clojure">Getting Started with Clojure on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-scala">Getting Started with Scala on Heroku</a></li>
-            <li class="divider"></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-heroku-and-connect-without-local-dev">Getting Started on Heroku with Heroku Connect</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-jruby">Getting Started with Ruby on Heroku (Microsoft Windows)</a></li>
-          </ul>
-      </li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="navbar-right">
-        <a href="https://devcenter.heroku.com"><span class="glyphicon glyphicon-book"></span> Heroku Dev Center</a>
-      </li>
-    </ul>
+<html>
+  <head>
+    <!-- nav style (logo icon) -->
+    <link rel="stylesheet" href="public/assets/css/navigation.css" type="text/css">
+    <!-- nva sytle sheet (logo icon) -->
+  </head>
+<body>
+
+  <div id="msg_stiker">
+    <a href="#"><img src="/public/assets/icon/msg-e.png" border="0" width="40px" style="float:right;padding-left:;" title="Under Development" title="Under Development"></a>
   </div>
-</nav>
+
+
+
+  <div id="target"style="height" >
+
+    <!-- nav -->
+    <div class="dropdown">
+      <img onclick="myFunction()" class="dropbtn" src="/public/assets/icon/icon_sq.png" border="0"width="50px" style="float:left;margin-left:-20%;">
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#about">Profile</a>
+        <a id="this_page" href="nav">Library</a>
+        <a href="todo">Editor <!-- <img src="file:///Users/mac/Desktop/beta-tg/icon/editor.png" border="0" width="10px" style="" > --></a>
+        <a href="#contact" title="Under Development">Community <img src="/public/assets/icon/inbeta.png" border="0"width="8px" style="" title="Under Development"></a>
+        <a href="#contact" title="Under Development">Explore <img src="/public/assets/icon/inbeta.png" border="0"width="8px" style="" title="Under Development"></a>
+      </div>
+    </div>
+  <!-- nav -->
+
+    <table style="width:80%;float:left;padding-left:9%;" >
+      <tr id="nav_color" style="background-color: white;height:48px;" >
+        <td>
+          <!--<img src="file:///Users/mac/Desktop/beta-tg/icon/home-b.png" border="0"width="48px" style="float:left;" title="Under Development">-->
+        </td>
+        <td>
+          <!-- profile -->
+          <img  src="/public/assets/icon/profile.png" border="0"width="40px" style="float:right;padding-left:20px;" title="Under Development">
+          <!-- proflie -->
+          <img src="/public/assets/icon/notification-b.png" border="0"width="48px" style="float:right;padding-left:;" title="Under Development">
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+
+
+
+
+
+<!-- boody -->
+
+
+
+<!-- body -->
+
+
+                       </div>
+
+
+
+<!-- Drop Down -->
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+<!-- Drop Down -->
+<!-- profile -->
+
+
+
+<!-- Profile -->
+
+
+
+
+
+
+</body>
+</html>
